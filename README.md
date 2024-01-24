@@ -1,6 +1,6 @@
  This is a simple Java project to control household expenses. This is an ongoing project to exercise recently learned concepts in Java Web Development.
 
- # Techonologies used:
+ # Technologies used:
   - Java
   - SpringBoot
   - SpringDataJPA
