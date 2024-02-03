@@ -14,13 +14,13 @@ public class ExpenseServiceImplementation implements ExpenseService {
     private ExpenseRepository expenseRepository;
 
     @Autowired // Assigns object creation to SpringBoot
-    public ExpenseServiceImplementation(ExpenseRepository expenseRepository){
+    public ExpenseServiceImplementation(ExpenseRepository expenseRepository){ // Injecting the DAO class, which will allow for SpringData JPA CRUD methods to be called
         this.expenseRepository = expenseRepository;
     }
 
     @Override
     public List<Expense> findAll() {
-        return expenseRepository.findAll();
+        return expenseRepository.findAll(); // SpringData JPA method
     }
 
     @Override

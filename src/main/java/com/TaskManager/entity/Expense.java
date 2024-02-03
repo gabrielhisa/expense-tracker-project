@@ -22,6 +22,16 @@ public class Expense {
     @Column(name="amount")
     private double amount;
 
+    // An empty constructor must be declared for SpringBoot if we create a constructor with parameters
+    public Expense(){
+
+    }
+
+    public Expense(String name, Date date, double amount) {
+        this.name = name;
+        this.date = date;
+        this.amount = amount;
+    }
 
     // Getters and setters
     public Integer getId() {

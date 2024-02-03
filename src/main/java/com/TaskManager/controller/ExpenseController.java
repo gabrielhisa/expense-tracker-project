@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller // Annotation to set this class as a controller class for SpringBoot
-@RequestMapping("/exp") // Base mapping for the URL requests
+@RequestMapping("") // Base mapping for the URL requests
 public class ExpenseController {
 
         private ExpenseService expenseService;
